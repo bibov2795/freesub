@@ -4,29 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇰 SK 01 - xiaohe
+- name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: bbcdd4t.de-p2.h1clayd.click
+  server: base.hosamobenl.co.uk
   port: 443
-  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: n9cdr2Qf9h3S_jf5Rcd15fl-4fxuztHvlexE7G-QvW8
-  servername: bbcdd4t.de-p2.h1clayd.click
-  client-fingerprint: firefox
+  servername: base.hosamobenl.co.uk
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇰 SK 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇰 SK 01 - xiaohe
+  - 🇮🇷 IR 01 - xiaohe
 rules:
 - MATCH,PROXIES
